@@ -1,22 +1,12 @@
 import Vue from "vue";
 import Vuex from "vuex";
-
 Vue.use(Vuex);
 
+// here import store modules
+import DynamicComponents from "./modules/DynamicComponent";
 export default new Vuex.Store({
-  state: {
-    count: 1
-  },
-  mutations: {
-    SET_COUNT(state) {
-      console.log("mutation called", state);
-      state.count++;
-    }
-  },
-  actions: {
-    getUsers(context) {
-      context.commit("SET_COUNT");
-    }
-  },
-  modules: {}
+  strict: process.env.NODE_ENV !== "production", //by default this if false and doesn't exist. true will make vuex strict mode
+  modules: {
+    DynamicComponents
+  }
 });

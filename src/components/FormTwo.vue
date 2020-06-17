@@ -2,7 +2,10 @@
   <div>
     sign up page
     <b-button variant="outline-primary" @click="handleClick">test</b-button>
-    <b-alert show dismissible>
+    <b-button variant="outline-primary" @click="handleApiCall"
+      >test api call</b-button
+    >
+    <!-- <b-alert show dismissible>
       Dismissible Alert! Click the close button over there <b>&rArr;</b>
     </b-alert>
     <b-alert show variant="success" dismissible>
@@ -17,35 +20,42 @@
         Whenever you need to, be sure to use margin utilities to keep things
         nice and tidy.
       </p>
-    </b-alert>
+    </b-alert> -->
     <!-- {{ apiData }} -->
-    <div v-for="(item, index) in apiData" :key="index">
-      {{ item.username }} - {{ item.email }} - {{ item.name }}
+    <div v-for="(item, index) in getUsers" :key="index">
+      {{ item.username | userNameHashTag }} - {{ item.email }} - {{ item.name }}
     </div>
+    {{ getCount }}
+
+    <br />
+    <!-- {{ getUsers }} -->
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
   data() {
     return {
       apiData: []
     };
   },
-  created() {
-    this.axios
-      .get("https://jsonplaceholder.typicode.com/users")
-      .then(response => {
-        console.log(response.data);
-        this.apiData = response.data;
-      });
+  created() {},
+  filters: {
+    userNameHashTag: value => `# ${value}`
   },
   methods: {
     handleClick() {
-      this.$store.dispatch("getUsers");
-
-      console.log("test", this.$store.state.count);
+      this.$store.dispatch("getCount");
+      this.getUsers.pop();
+      console.log(...this.getUsers);
+    },
+    handleApiCall() {
+      this.$store.dispatch("getUsers", this.apiData);
     }
+  },
+  computed: {
+    ...mapGetters(["getCount", "getUsers"])
   }
 };
 </script>
