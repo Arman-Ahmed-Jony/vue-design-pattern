@@ -1,4 +1,5 @@
 # vue-desgn-pattern
+this project is made for passing my significant time in wasting, but in a funny way :smiley:
 
 ## Project setup
 ```
@@ -34,6 +35,3 @@ npm run test:e2e
 ```
 npm run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
