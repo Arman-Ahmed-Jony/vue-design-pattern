@@ -1,26 +1,14 @@
 <template>
   <div>
-    <button @click="tab = 'form-one'">Login page</button>
-    <button @click="tab = 'form-two'">Sign up page</button>
+    <b-button variant="outline-primary" @click="tab = 'form-one'"
+      >Login page</b-button
+    >
+    <b-button variant="outline-primary" @click="tab = 'form-two'"
+      >Sign up page</b-button
+    >
+    <!-- <button @click="tab = 'form-one'">Login page</button>
+    <button @click="tab = 'form-two'">Sign up page</button> -->
     <component class="component" :is="currentTab"></component>
-    <b-alert variant="success" show>Success Alert</b-alert>
-    <b-alert show variant="dark">Dark Alert</b-alert>
-    <b-alert show dismissible>
-      Dismissible Alert! Click the close button over there <b>&rArr;</b>
-    </b-alert>
-    <b-alert show variant="success">
-      <h4 class="alert-heading">Well done!</h4>
-      <p>
-        Aww yeah, you successfully read this important alert message. This
-        example text is going to run a bit longer so that you can see how
-        spacing within an alert works with this kind of content.
-      </p>
-      <hr />
-      <p class="mb-0">
-        Whenever you need to, be sure to use margin utilities to keep things
-        nice and tidy.
-      </p>
-    </b-alert>
   </div>
 </template>
 
