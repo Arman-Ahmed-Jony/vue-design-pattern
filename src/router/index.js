@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-
+import SingleFileComponent from "../views/SingleFileComponent";
 Vue.use(VueRouter);
 
 const routes = [
@@ -18,6 +18,21 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
+  },
+  {
+    path: "/single-file-component",
+    name: "single-file-component",
+    component: SingleFileComponent
+  },
+  {
+    path: "/props-and-events",
+    name: "props-and-events",
+    component: () => import("../views/PropsAndEvent.vue")
+  },
+  {
+    path: "/dynamic-component",
+    name: "dunamic-compnent",
+    component: () => import("../views/DynamicComponent.vue")
   }
 ];
 
