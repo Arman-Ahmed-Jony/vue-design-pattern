@@ -1,8 +1,11 @@
 <template>
   <div>
     <!-- <div>test</div> -->
-    <v-btn :text="text" @click="handleClick"></v-btn>
-    <Form></Form>
+    <v-btn :text="text" @click="handleClick"></v-btn><br /><br />
+    <h2>form component</h2>
+    <Form text="input field"></Form>
+    <h2>form with function props</h2>
+    <form-props-function></form-props-function>
   </div>
 </template>
 
@@ -11,7 +14,8 @@ import VBtn from "../components/VBtn";
 export default {
   components: {
     VBtn,
-    Form: () => import("../components/Form")
+    Form: () => import("../components/Form"),
+    FormPropsFunction: () => import("../components/FormPropsFunction")
   },
   data() {
     return {

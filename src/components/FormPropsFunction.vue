@@ -1,11 +1,10 @@
 // in this example we will demonstrate funstion props
 <template>
-  <div>
-    input: <input type="text" v-model="normalizedText" />
+  <div class="form-container">
+    name: <input type="text" v-model="normalizedText" /> <br /><br />
+    email: <input type="text" v-model="normalizedText" /><br /><br />
+    username: <input type="text" v-model="normalizedText" /><br /><br />
     <button>test</button>
-    <br />
-    * example above we have used computed setter getter. remember, we should
-    avoid mutating props directily
   </div>
 </template>
 
@@ -34,4 +33,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.form-container {
+  width: 40vw;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  border: 3px dotted black;
+}
+</style>
