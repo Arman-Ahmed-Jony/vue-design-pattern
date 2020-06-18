@@ -1,13 +1,17 @@
 <template>
-  <!-- <div>test</div> -->
-  <v-btn :text="text" @click="handleClick"></v-btn>
+  <div>
+    <!-- <div>test</div> -->
+    <v-btn :text="text" @click="handleClick"></v-btn>
+    <Form></Form>
+  </div>
 </template>
 
 <script>
 import VBtn from "../components/VBtn";
 export default {
   components: {
-    VBtn
+    VBtn,
+    Form: () => import("../components/Form")
   },
   data() {
     return {
