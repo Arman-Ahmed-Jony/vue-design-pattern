@@ -4,6 +4,7 @@
     name: <input type="text" v-model="name" /> <br /><br />
     email: <input type="text" v-model="email" /><br /><br />
     username: <input type="text" v-model="username" /><br /><br />
+    <button @click="handleAction">test fun prop</button>
   </div>
 </template>
 

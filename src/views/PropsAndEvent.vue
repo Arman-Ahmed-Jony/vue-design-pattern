@@ -6,7 +6,7 @@
     <Form text="input field"></Form>
     <h2>form with function props</h2>
     <form-props-function :handleAction="clickEventProps"></form-props-function>
-    <button @click="clickEventProps">action</button>
+    <!-- <button @click="clickEventProps">action</button> -->
   </div>
 </template>
 
