@@ -5,7 +5,8 @@
     <h2>form component</h2>
     <Form text="input field"></Form>
     <h2>form with function props</h2>
-    <form-props-function></form-props-function>
+    <form-props-function :handleAction="clickEventProps"></form-props-function>
+    <button @click="clickEventProps">action</button>
   </div>
 </template>
 
@@ -26,6 +27,9 @@ export default {
   methods: {
     handleClick() {
       this.text = `button clicked ${++this.count}`;
+    },
+    clickEventProps() {
+      console.log("test");
     }
   }
 };
