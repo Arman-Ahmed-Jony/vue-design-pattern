@@ -35,7 +35,7 @@ const routes = [
     component: () => import('../views/DynamicComponent.vue')
   },
   {
-    path: './test-driven-development',
+    path: '/test-driven-development',
     name: 'tdd',
     component: () => import('../views/TestDrivenDevelopment.vue')
   }

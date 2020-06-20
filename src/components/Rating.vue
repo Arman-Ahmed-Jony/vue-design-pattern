@@ -7,7 +7,9 @@
         v-for="(star, index) in maxStars"
         :key="index"
         class="star"
-      ></li>
+      >
+        &#9734;
+      </li>
     </ul>
   </div>
 </template>
@@ -25,4 +27,20 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+li {
+  display: inline;
+}
+ul {
+  margin: auto;
+  padding: 0;
+}
+.star {
+  color: rgb(47, 255, 75);
+  margin: 2px;
+  font-size: 30px;
+}
+.active {
+  color: rgb(255, 25, 25);
+}
+</style>
