@@ -12,17 +12,17 @@
 export default {
   data() {
     return {
-      name: "",
-      email: "",
-      username: ""
-    };
+      name: '',
+      email: '',
+      username: ''
+    }
   },
   props: {
     handleAction: {
       type: Function
     }
   }
-};
+}
 </script>
 
 <style scoped>

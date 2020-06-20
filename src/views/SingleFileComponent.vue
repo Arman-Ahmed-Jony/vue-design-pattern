@@ -11,14 +11,14 @@ export default {
   data() {
     return {
       count: 0
-    };
+    }
   },
   methods: {
     handleClick() {
-      this.count++;
+      this.count++
     }
   }
-};
+}
 </script>
 
 <style>

@@ -6,7 +6,10 @@
       <router-link to="/single-file-component"
         >single file component</router-link
       >| <router-link to="/props-and-events">Props and Event</router-link>|
-      <router-link to="/dynamic-component">Dynamiic component</router-link>
+      <router-link to="/dynamic-component">Dynamiic component</router-link>|
+      <router-link :to="{ name: 'tdd' }"
+        >TDD(test driven development in jest)</router-link
+      >
     </div>
     <router-view />
   </div>

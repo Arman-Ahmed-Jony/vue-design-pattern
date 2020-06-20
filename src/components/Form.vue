@@ -14,7 +14,7 @@ export default {
   data() {
     return {
       textCopy: this.text
-    };
+    }
   },
   props: {
     text: {
@@ -24,14 +24,14 @@ export default {
   computed: {
     normalizedText: {
       get() {
-        return this.textCopy;
+        return this.textCopy
       },
       set(val) {
-        this.textCopy = val;
+        this.textCopy = val
       }
     }
   }
-};
+}
 </script>
 
 <style></style>

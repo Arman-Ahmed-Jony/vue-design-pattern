@@ -33,12 +33,12 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 export default {
   data() {
     return {
       apiData: []
-    };
+    }
   },
   created() {},
   filters: {
@@ -46,18 +46,18 @@ export default {
   },
   methods: {
     handleClick() {
-      this.$store.dispatch("getCount");
-      this.getUsers.pop();
-      console.log(...this.getUsers);
+      this.$store.dispatch('getCount')
+      this.getUsers.pop()
+      console.log(...this.getUsers)
     },
     handleApiCall() {
-      this.$store.dispatch("getUsers", this.apiData);
+      this.$store.dispatch('getUsers', this.apiData)
     }
   },
   computed: {
-    ...mapGetters(["getCount", "getUsers"])
+    ...mapGetters(['getCount', 'getUsers'])
   }
-};
+}
 </script>
 
 <style scoped>

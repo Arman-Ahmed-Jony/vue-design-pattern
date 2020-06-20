@@ -19,33 +19,33 @@
 </template>
 
 <script>
-import VBtn from "../components/VBtn";
+import VBtn from '../components/VBtn'
 export default {
   components: {
     VBtn,
-    Form: () => import("../components/Form"),
-    FormPropsFunction: () => import("../components/FormPropsFunction")
+    Form: () => import('../components/Form'),
+    FormPropsFunction: () => import('../components/FormPropsFunction')
   },
   data() {
     return {
       count: 0,
-      text: "initial text",
+      text: 'initial text',
       url: null
-    };
+    }
   },
   methods: {
     handleClick() {
-      this.text = `button clicked ${++this.count}`;
+      this.text = `button clicked ${++this.count}`
     },
     onFileChange(e) {
-      const file = e.target.files[0];
-      this.url = URL.createObjectURL(file);
+      const file = e.target.files[0]
+      this.url = URL.createObjectURL(file)
     },
     clickEventProps() {
-      console.log("test");
+      console.log('test')
     }
   }
-};
+}
 </script>
 
 <style></style>

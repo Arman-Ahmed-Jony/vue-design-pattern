@@ -11,10 +11,10 @@
 export default {
   methods: {
     handleApiCall() {
-      console.log(this.$store.state.users);
+      console.log(this.$store.state.users)
     }
   }
-};
+}
 </script>
 
 <style scoped>

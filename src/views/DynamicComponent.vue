@@ -13,24 +13,24 @@
 </template>
 
 <script>
-import FormOne from "../components/FormOne";
-import FormTwo from "../components/FormTwo";
+import FormOne from '../components/FormOne'
+import FormTwo from '../components/FormTwo'
 export default {
   components: {
-    "form-one": FormOne,
-    "form-two": FormTwo
+    'form-one': FormOne,
+    'form-two': FormTwo
   },
   data() {
     return {
-      tab: "form-one"
-    };
+      tab: 'form-one'
+    }
   },
   computed: {
     currentTab() {
-      return this.tab;
+      return this.tab
     }
   }
-};
+}
 </script>
 
 <style>

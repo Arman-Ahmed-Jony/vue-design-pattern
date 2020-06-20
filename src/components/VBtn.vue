@@ -4,11 +4,11 @@
 
 <script>
 export default {
-  name: "v-btn",
+  name: 'v-btn',
   props: {
     text: String
   }
-};
+}
 </script>
 
 <style></style>
