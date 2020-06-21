@@ -40,7 +40,7 @@ export default {}
     transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(360deg);
+    transform: rotateY(180deg);
   }
 }
 </style>
