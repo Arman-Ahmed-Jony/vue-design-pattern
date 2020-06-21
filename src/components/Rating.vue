@@ -36,11 +36,18 @@ ul {
   padding: 0;
 }
 .star {
-  color: rgb(47, 255, 75);
+  color: rgba(47, 255, 75);
   margin: 2px;
+
+  opacity: 0.7;
   font-size: 30px;
 }
+.star:hover {
+  opacity: 1;
+}
 .active {
-  color: rgb(255, 25, 25);
+  color: rgba(255, 25, 25);
+
+  opacity: 0.7;
 }
 </style>

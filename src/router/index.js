@@ -38,6 +38,11 @@ const routes = [
     path: '/test-driven-development',
     name: 'tdd',
     component: () => import('../views/TestDrivenDevelopment.vue')
+  },
+  {
+    path: '/SVG-components',
+    name: 'SVGs',
+    component: () => import('../views/SVGs.vue')
   }
 ]
 

@@ -4,12 +4,11 @@
       <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>|
       <router-link to="/single-file-component"
-        >single file component</router-link
+        >Single File Component</router-link
       >| <router-link to="/props-and-events">Props and Event</router-link>|
-      <router-link to="/dynamic-component">Dynamiic component</router-link>|
-      <router-link :to="{ name: 'tdd' }"
-        >TDD(test driven development in jest)</router-link
-      >
+      <router-link to="/dynamic-component">Dynamic Component</router-link>|
+      <router-link :to="{ name: 'tdd' }">TDD in jest</router-link>|
+      <router-link :to="{ name: 'SVGs' }">SVG components</router-link>
     </div>
     <router-view />
   </div>

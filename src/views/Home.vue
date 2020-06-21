@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="svg-container">
+      <vue-svg></vue-svg>
+    </div>
+    <HelloWorld msg="Arman's Expeditions" />
   </div>
 </template>
 
@@ -12,7 +14,16 @@ import HelloWorld from '@/components/HelloWorld.vue'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    HelloWorld,
+    VueSvg: () => import('../components/VueSVG')
   }
 }
 </script>
+<style>
+.svg-container {
+  display: flex;
+
+  justify-content: space-around;
+  align-content: center;
+}
+</style>
