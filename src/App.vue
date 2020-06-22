@@ -11,7 +11,7 @@
   </div>
 </template>
 <script>
-import navLink from './assets/navLinks'
+import { navLink } from './assets/navLinks'
 export default {
   components: {
     NavigationBar: () => import('./components/NavigationBar')
@@ -24,12 +24,13 @@ export default {
 }
 </script>
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
 * {
   margin: 0;
   padding: 0;
 }
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Comfortaa', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
