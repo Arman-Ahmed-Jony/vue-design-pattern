@@ -43,6 +43,11 @@ const routes = [
     path: '/SVG-components',
     name: 'SVGs',
     component: () => import('../views/SVGs.vue')
+  },
+  {
+    path: '/portfolio',
+    name: 'portfolio',
+    component: () => import('../views/Portfolio.vue')
   }
 ]
 

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+*, *::before, *::after {
+  box-sizing: border-box;
+  text-align: left;
+}
+
+
+/* general style */
+
+.main-container{
+  background:var(--clr-accent);
+}
+
+

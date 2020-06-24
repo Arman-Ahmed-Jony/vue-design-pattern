@@ -28,6 +28,10 @@ export const navLink = {
     {
       to: '/SVG-components',
       name: 'SVGs'
+    },
+    {
+      to: '/portfolio',
+      name: 'Portfolio'
     }
   ],
   navButtons: [
