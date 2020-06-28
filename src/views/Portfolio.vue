@@ -32,7 +32,7 @@
         <strong>Arman</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">front end dev</p>
-      <img src="@/assets/logo.png" alt="a picture of arman" />
+      <img src="@/assets/Robert-Downey-Jr.jpg" alt="a picture of arman" />
     </section>
 
     <!-- my services -->
@@ -41,15 +41,28 @@
       <div class="services">
         <div class="service">
           <h3></h3>
-          <p></p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            cum culpa quae pariatur veritatis doloribus officia vitae neque in
+            temporibus.
+          </p>
         </div>
         <div class="service">
           <h3></h3>
-          <p></p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            dolorem cumque quis fugit saepe magnam odio hic enim aliquid
+            perferendis.
+          </p>
         </div>
         <div class="service">
           <h3></h3>
-          <p></p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+            vel ut necessitatibus sequi harum corrupti, nobis, tempore hic
+            maxime aperiam ipsa suscipit? Praesentium aperiam hic tenetur,
+            molestiae quis iusto non.
+          </p>
         </div>
       </div>
       <a href="#work" class="btn">My Work</a>
@@ -62,7 +75,7 @@
       <div class="about-me__body">
         <p></p>
       </div>
-      <img src="@/assets/logo.png" alt="arman half body picture" />
+      <img src="@/assets/half-body.jpg" alt="arman half body picture" />
     </section>
     <section class="my-work" id="work">
       <h2 class="section__title">My Work</h2>
