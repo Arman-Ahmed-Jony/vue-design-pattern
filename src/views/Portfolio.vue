@@ -2,10 +2,11 @@
   <div class="main-container">
     <header>
       <div class="logo">
-        <img src="@/assets/logo.png" alt="an image of logo" />
+        <h3>&lt;devJohn&gt;</h3>
+        <!-- <img src="@/assets/logo.png" alt="an image of logo" /> -->
       </div>
       <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
+        <span class="hamburger">==</span>
       </button>
       <nav class="nav">
         <ul class="nav__list">
@@ -40,7 +41,7 @@
       <h2 class="section__title section__title--services">What I do</h2>
       <div class="services">
         <div class="service">
-          <h3></h3>
+          <h3>heading 1</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
             cum culpa quae pariatur veritatis doloribus officia vitae neque in
@@ -48,7 +49,7 @@
           </p>
         </div>
         <div class="service">
-          <h3></h3>
+          <h3>heading 2</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             dolorem cumque quis fugit saepe magnam odio hic enim aliquid
@@ -56,7 +57,7 @@
           </p>
         </div>
         <div class="service">
-          <h3></h3>
+          <h3>heading 3</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
             vel ut necessitatibus sequi harum corrupti, nobis, tempore hic
@@ -71,9 +72,16 @@
     <!-- About me -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about"></p>
+      <p class="section__subtitle section__subtitle--about">
+        Full Stack Web Developer
+      </p>
       <div class="about-me__body">
-        <p></p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+          asperiores laborum, molestias nostrum mollitia eveniet ratione dicta
+          cupiditate maiores, dolorum doloremque quam. Deserunt provident
+          ratione omnis hic maiores quas excepturi!
+        </p>
       </div>
       <img src="@/assets/half-body.jpg" alt="arman half body picture" />
     </section>

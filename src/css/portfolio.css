@@ -1,14 +1,44 @@
+/* --ff-primary: 'Comfortaa', cursive; */
+/* --ff-secondary: Arial, Helvetica, sans-serif; */
+/* --fw-reg: 300; */
+/* --fw-bold: 900; */
+/* --clr-light: #fff; */
+/* --clr-dark: #303030; */
+/* --clr-accent: #16e0bd; */
+/* --fs-h1: 3rem; */
+/* --fs-h2: 2.25rem; */
+/* --fs-h3: 1.25rem; */
+/* --fs-body: 1rem; */
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   text-align: left;
 }
 
-
 /* general style */
 
-.main-container{
-  background:var(--clr-accent);
+.main-container {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
 }
 
-
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
