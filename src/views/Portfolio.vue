@@ -30,10 +30,14 @@
     <section class="intro" id="home">
       <h1 class="section__title section__title--intro">
         Hi, I am
-        <strong>Arman</strong>
+        <strong>dev John</strong>
       </h1>
-      <p class="section__subtitle section__subtitle--intro">front end dev</p>
-      <img src="@/assets/Robert-Downey-Jr.jpg" alt="a picture of arman" />
+      <p class="section__subtitle section__subtitle--intro">FRONT-END DEV</p>
+      <img
+        src="@/assets/Robert-Downey-Jr.jpg"
+        alt="a picture of arman"
+        class="intro__img"
+      />
     </section>
 
     <!-- my services -->
@@ -51,18 +55,17 @@
         <div class="service">
           <h3>heading 2</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            dolorem cumque quis fugit saepe magnam odio hic enim aliquid
-            perferendis.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            cum culpa quae pariatur veritatis doloribus officia vitae neque in
+            temporibus.
           </p>
         </div>
         <div class="service">
           <h3>heading 3</h3>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-            vel ut necessitatibus sequi harum corrupti, nobis, tempore hic
-            maxime aperiam ipsa suscipit? Praesentium aperiam hic tenetur,
-            molestiae quis iusto non.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
+            cum culpa quae pariatur veritatis doloribus officia vitae neque in
+            temporibus.
           </p>
         </div>
       </div>
@@ -80,26 +83,50 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
           asperiores laborum, molestias nostrum mollitia eveniet ratione dicta
           cupiditate maiores, dolorum doloremque quam. Deserunt provident
-          ratione omnis hic maiores quas excepturi!
+          ratione omnis hic maiores quas excepturi! Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Perspiciatis asperiores laborum,
+          molestias nostrum mollitia eveniet ratione dicta cupiditate maiores,
+          dolorum doloremque quam. Deserunt provident ratione omnis hic maiores
+          quas excepturi! Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Perspiciatis asperiores laborum, molestias nostrum mollitia
+          eveniet ratione dicta cupiditate maiores, dolorum doloremque quam.
+          Deserunt provident ratione omnis hic maiores quas excepturi!
         </p>
       </div>
-      <img src="@/assets/half-body.jpg" alt="arman half body picture" />
+      <img
+        class="about-me__img"
+        src="@/assets/half-body.jpg"
+        alt="arman half body picture"
+      />
     </section>
     <section class="my-work" id="work">
-      <h2 class="section__title">My Work</h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A section of my range of work
+      </p>
       <div class="portfolio">
         <!-- portfolio 1 -->
         <a href="#" class="portfolio__item">
-          <img src="@/assets/logo.png" alt class="portfolio__img" />
+          <img src="@/assets/work1.jpg" alt class="portfolio__img" />
         </a>
         <!-- portfolio 1 -->
         <a href="#" class="portfolio__item">
-          <img src="@/assets/logo.png" alt class="portfolio__img" />
+          <img src="@/assets/work2.jpg" alt class="portfolio__img" />
         </a>
         <!-- portfolio 1 -->
         <a href="#" class="portfolio__item">
-          <img src="@/assets/logo.png" alt class="portfolio__img" />
+          <img src="@/assets/work3.jpg" alt class="portfolio__img" />
+        </a>
+        <a href="#" class="portfolio__item">
+          <img src="@/assets/work7.jpg" alt class="portfolio__img" />
+        </a>
+        <!-- portfolio 1 -->
+        <a href="#" class="portfolio__item">
+          <img src="@/assets/work5.png" alt class="portfolio__img" />
+        </a>
+        <!-- portfolio 1 -->
+        <a href="#" class="portfolio__item">
+          <img src="@/assets/work6.jpg" alt class="portfolio__img" />
         </a>
       </div>
     </section>
@@ -133,7 +160,7 @@ export default {}
 .main-container {
   --ff-primary: 'Comfortaa', cursive;
   --ff-secondary: Arial, Helvetica, sans-serif;
-  --fw-reg: 300;
+  --fw-reg: 100;
   --fw-bold: 900;
   --clr-light: #fff;
   --clr-dark: #303030;
@@ -142,6 +169,8 @@ export default {}
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.175em rgba(0, 0, 0, 0.125);
 }
 
 @media (min-width: 800px) {
